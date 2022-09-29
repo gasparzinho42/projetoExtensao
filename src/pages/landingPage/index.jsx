@@ -1,17 +1,20 @@
-import React from "react";
-import Input from "../../components/Input";
-import { Container } from "./styles";
+import React from 'react';
+import { Container } from './styles';
+import BotaoPrincipal from '../../components/botaoPrincipal';
+import Paragrafo from '../../components/texto';
 
 function LandingPage() {
   return (
     <Container>
-      Ajudando você a ter as melhores experiências, e de quebra poupando seu
-      tempo.
-      <div style={{ width: 200 }}>
-        <Input label="Input de teste" placeholder="Placeholder" />
-      </div>
+        <Paragrafo text="Ajudando você a ter as melhores  experiências, e de quebra poupando seu tempo."/>
+        <div style={{display: 'flex', flexDirection: 'row'}}>
+          <BotaoPrincipal text="Cadastrar Estabelecimento" />
+          <BotaoPrincipal text="Procurar estabelecimentos" />
+        </div>
+        
+
     </Container>
-  );
+  )
 }
 
 export default LandingPage;
