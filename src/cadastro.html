@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="/src/cadastro.css"/>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="/src/cadastro.js"></script>
+    
+  </head>
+  <body>
+    <h1>Ajude nossa comunidade fornecendo dados do lugar visitado!</h1>
+    <div id="main-container">
+      
+      <form action="" method="" id="register-form">
+        <div class="full-box ">
+          <label for="name" >Nome do estabelecimento *</label>
+          <input type="text name="name" id="name" placeholder="Ex: Saude Farma" required maxlength="150" required/>
+          
+          
+        </div>
+        <div class="half-box spacing">
+          <label for="endereço">Endereço *</label>
+          <input type="text" name="endereço" id="endereço" placeholder="Ex: Av dois rios" required/>
+     
+        
+        </div>
+        <div class="half-box spacing">
+          <label for="numero">Número </label>
+          <input type="text"  maxlength="4"  name="numero" id="numero" placeholder="Ex: 3702"  onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+        </div>
+        
+        <div class="full-box">
+          <label for="bairro" >Bairro *</label>
+          <input type="text" name="bairro"  id="bairro" placeholder="Ex: Encruzilhada" required/>
+          
+
+        </div>
+        <div class="full-box">
+          <label for="telefone">Telefone do estabelecimento </label>
+          <input type="text" name="name" id="telefone" placeholder="(xx) xxxxx-xxxx"/>
+        </div>
+
+        <div class="half-box">
+          <label for="select">Tipo de estabelecimento</label>
+          <div class="half-box">
+            <select name="select" id="select">
+                <option value="farmacia">Selecione</option>
+              <option value="farmacia">Fármacia</option>
+              <option value="Mercado">Mercado</option>
+              <option value="Padaria">Padaria</option>
+              <option value="Açougue">Açougue</option>
+              <option value="Escola">Escola</option>
+              <option value="Universidade">Universidade</option>
+            </select>
+            
+          </div>
+          <p class="itens">Itens de acessibilidade:</p>
+        </div>
+
+
+          
+          <div class="container">
+            
+            <div class="list">
+              <div class="form-element">
+                <input type="checkbox" name="platform" value="acessibilidade1" id="acessibilidade1">
+                <label for="acessibilidade1">
+                  <div class="icon">
+
+                    <img src="/img/xxx.png">                   
+
+                  </div>
+                 
+                </label>
+              </div>
+              <div class="form-element">
+                <input type="checkbox" name="platform" value="acessibilidade2" id="acessibilidade2">
+                <label for="acessibilidade2">
+                  <div class="icon">
+                    <img src="/img/xxx.png" alt="">
+                  </div>
+                
+                </label>
+              </div>
+              <div class="form-element">
+                <input type="checkbox" name="platform" value="acessibilidade3" id="acessibilidade3">
+                <label for="acessibilidade3">
+                  <div class="icon">
+                    <img src="/img/xxx.png" alt="">
+                  </div>
+                 
+                </label>
+              </div>
+              <div class="form-element">
+                <input type="checkbox" name="platform" value="acessibilidade4" id="acessibilidade4">
+                <label for="acessibilidade4">
+                  <div class="icon">
+                    <img src="/img/xxx.png" alt="">
+                  </div>
+                 
+                </label>
+              </div>
+              <div class="form-element">
+                <input type="checkbox" name="platform" value="acessibilidade5" id="acessibilidade5">
+                <label for="acessibilidade5">
+                  <div class="icon">
+                    <img src="/img/xxx.png" alt="">
+                  </div>
+                 
+                </label>
+              </div>
+              <div class="form-element">
+                <input type="checkbox" name="platform" value="acessibilidade6" id="acessibilidade6" >
+                <label for="acessibilidade6">
+                  <div class="icon">
+                    <img src="/img/xxx.png" alt="">
+                  </div>
+                  
+                </label>
+              </div>
+              <div class="form-element">
+                <input type="checkbox" name="platform" value="acessibilidade7" id="acessibilidade7">
+                <label for="acessibilidade7">
+                  <div class="icon">
+                    <img src="/img/xxx.png" alt="">
+                  </div>
+                 
+                </label>
+              </div>      
+             
+            </div>
+          </div>
+  
+  
+        
+        <div class="full-box">
+            <input   id="btn-submit" type="submit"  value="Enviar">
+        </div>
+
+        
+      </form>
+    </div>   
+    
+        
+
+  </body>
+</html>
