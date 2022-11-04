@@ -1,8 +1,9 @@
 import React from "react";
+import { P } from "./styles"
 
 const Paragrafo = ({text}) =>{
     return(
-        <p style={{color: 'red'}}>{text}</p>
+        <P>{text}</P>
     )
 } 
 export default Paragrafo
