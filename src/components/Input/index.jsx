@@ -8,6 +8,7 @@ function Input({
   value,
   onChange,
   onBlur,
+  onKeyPress,
   maxLength = 150,
   type = 'text',
 }) {
@@ -16,6 +17,7 @@ function Input({
       <CustomLabel htmlFor={label}>{label}</CustomLabel>
       <FakeInput>
         <CustomInput
+          autocomplete='false'
           name={label}
           placeholder={placeholder}
           value={value}
@@ -23,6 +25,7 @@ function Input({
           maxLength={maxLength}
           onBlur={onBlur}
           type={type}
+          onKeyPress={onKeyPress}
         />
       </FakeInput>
     </Container>

@@ -33,7 +33,7 @@ export const itemsSelectable = [
 
 export const cardsItems = [
   {
-    title: 'Pizzaria genérica',
+    title: 'Pizzaria genérica 1',
     phone: '(81) 99999-9999',
     type: 'Restaurante',
     accessibilityItems: [
@@ -41,15 +41,17 @@ export const cardsItems = [
       'acessibilidade 2',
       'acessibilidade 3',
     ],
+    rating: 3,
     reviews: [
       { userName: 'usuario google 1', review: 'review do usuario 1' },
       { userName: 'usuario google 2', review: 'review do usuario 2' },
     ],
   },
   {
-    title: 'Padaria genérica',
+    title: 'Padaria genérica 2',
     phone: '(81) 99999-9999',
     type: 'Padaria',
+    rating: 4,
     accessibilityItems: ['acessibilidade 9', 'acessibilidade 12'],
     reviews: [
       { userName: 'usuario google 1', review: 'review do usuario 1' },
@@ -57,9 +59,10 @@ export const cardsItems = [
     ],
   },
   {
-    title: 'Padaria genérica',
+    title: 'Padaria genérica 3',
     phone: '(81) 99999-9999',
     type: 'Padaria',
+    rating: 1,
     accessibilityItems: ['acessibilidade 9', 'acessibilidade 12'],
     reviews: [
       { userName: 'usuario google 1', review: 'review do usuario 1' },
@@ -67,9 +70,29 @@ export const cardsItems = [
     ],
   },
   {
-    title: 'Padaria genérica',
+    title: 'Padaria genérica 4',
     phone: '(81) 99999-9999',
     type: 'Padaria',
+    rating: 5,
+    accessibilityItems: [
+      'acessibilidade 9',
+      'acessibilidade 12',
+      'acessibilidade 121',
+      'acessibilidade 2',
+    ],
+    reviews: [
+      { userName: 'usuario google 1', review: 'review do usuario 1' },
+      { userName: 'usuario google 2', review: 'review do usuario 2' },
+      { userName: 'usuario google 3', review: 'review do usuario 2' },
+      { userName: 'usuario google 4', review: 'review do usuario 2' },
+      { userName: 'usuario google 5', review: 'review do usuario 2' },
+    ],
+  },
+  {
+    title: 'Padaria genérica 5',
+    phone: '(81) 99999-9999',
+    type: 'Padaria',
+    rating: 2,
     accessibilityItems: ['acessibilidade 9', 'acessibilidade 12'],
     reviews: [
       { userName: 'usuario google 1', review: 'review do usuario 1' },
@@ -77,19 +100,10 @@ export const cardsItems = [
     ],
   },
   {
-    title: 'Padaria genérica',
+    title: 'Padaria genérica 6',
     phone: '(81) 99999-9999',
     type: 'Padaria',
-    accessibilityItems: ['acessibilidade 9', 'acessibilidade 12'],
-    reviews: [
-      { userName: 'usuario google 1', review: 'review do usuario 1' },
-      { userName: 'usuario google 2', review: 'review do usuario 2' },
-    ],
-  },
-  {
-    title: 'Padaria genérica',
-    phone: '(81) 99999-9999',
-    type: 'Padaria',
+    rating: 4,
     accessibilityItems: ['acessibilidade 9', 'acessibilidade 12'],
     reviews: [
       { userName: 'usuario google 1', review: 'review do usuario 1' },

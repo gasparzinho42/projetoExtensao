@@ -18,9 +18,8 @@ function Row(props) {
     marginTop: props.mt || null,
     justifyContent: props.justifyContent || 'flex-start',
     alignItems: props.alignItems || 'center',
-    gap: props.gap || null,
     rowGap: props.rowGap || null,
-    colGap: props.colGap || null,
+    columnGap: props.colGap || null,
   }
   return <div style={style}>{props.children}</div>
 }

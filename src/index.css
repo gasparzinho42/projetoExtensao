@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap');
+
 body {
   margin: 0;
   font-family: 'Karla', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background-color: #140d4f;
 }
 
 code {

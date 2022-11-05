@@ -13,7 +13,7 @@ export const Container = styled.div`
 `
 export const FakeInput = styled.div`
   width: 100%;
-  padding: 10px 23px;
+  padding: 10px 0px 10px 10px;
   border-radius: 8px;
   border: none;
   background-color: ${colors.blueMunsell};

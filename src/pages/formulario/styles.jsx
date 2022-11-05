@@ -10,7 +10,7 @@ export const FormContainer = styled.div`
   }
 `
 export const CustomBox = styled.div`
-  width: 80%;
+  width: 70%;
   @media (max-width: 1519px) {
     width: 70%;
   }

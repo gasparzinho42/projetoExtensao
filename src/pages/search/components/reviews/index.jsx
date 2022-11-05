@@ -8,7 +8,7 @@ function Reviews(Props) {
       <div key={review.userName}>
         <SubTitle>{review.userName}</SubTitle>
         <Row pl='15px'>
-          <LightText>review.review</LightText>
+          <LightText>{review.review}</LightText>
         </Row>
       </div>
     )

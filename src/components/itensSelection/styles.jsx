@@ -5,18 +5,19 @@ export const Container = styled.div`
   background-color: transparent;
   border: 1px solid ${colors.blueMunsell};
   border-radius: 8px;
-  width: fit-content;
+  width: 100%;
+  justify-content: space-around;
   height: fit-content;
-  padding: 18px;
+  padding: 3px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 5px;
-  @media (max-width: 1441px) {
+  grid-template-columns: repeat(auto-fit, minmax(130px, 156px));
+  row-gap: 5px;
+  /* @media (max-width: 1441px) {
     grid-template-columns: 1fr 1fr;
   }
   @media (max-width: 948px) {
     grid-template-columns: 1fr;
-  }
+  } */
 `
 export const Item = styled.div`
   border-radius: 8px;
@@ -24,6 +25,7 @@ export const Item = styled.div`
     props.selected === true ? colors.blueMunsell : 'white'};
   color: black;
   padding: 40px 19px;
+  font-size: 20px;
   cursor: pointer;
   text-align: center;
 `

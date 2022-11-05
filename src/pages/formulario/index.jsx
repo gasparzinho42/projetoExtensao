@@ -29,7 +29,7 @@ function Formulario() {
           <CustomBox>
             <Input label='Endereço *' />
           </CustomBox>
-          <Box w='10%'>
+          <Box w='20%'>
             <Input label='Número' maxLength={4} />
           </Box>
         </Row>
