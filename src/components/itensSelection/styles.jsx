@@ -5,7 +5,7 @@ export const Container = styled.div`
   background-color: transparent;
   border: 1px solid ${colors.blueMunsell};
   border-radius: 8px;
-  width: 100%;
+  width: fit-content;
   height: fit-content;
   padding: 18px;
   display: grid;

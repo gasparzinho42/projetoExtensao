@@ -8,7 +8,6 @@ function Col(props) {
     height: props.h || 'fit-content',
     justifyContent: props.justifyContent || null,
     alignItems: props.alignItems || null,
-    gap: props.gap || null,
     rowGap: props.rowGap || null,
     colGap: props.colGap || null,
     position: props.position || null,

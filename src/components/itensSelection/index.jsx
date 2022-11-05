@@ -1,16 +1,14 @@
 import React, { useState } from 'react'
-import { itemsSelectable } from '../../utils/mocks'
 import { Container, Item } from './styles'
 
-// import { Container } from './styles';
-
-function ItensSelection() {
-  const itemsParsed = itemsSelectable.map(item => {
+function ItensSelection(Props) {
+  const itemsParsed = Props.items?.map(item => {
     return {
-      selected: false,
+      selected: Props.readOnly,
       label: item,
     }
   })
+
   const [items, setItems] = useState(itemsParsed)
 
   return (
@@ -21,10 +19,12 @@ function ItensSelection() {
             key={index}
             selected={item.selected}
             onClick={() => {
-              const newItems = [...array]
-              newItems[index].selected = !item.selected
-              console.log(newItems)
-              setItems(newItems)
+              if (!Props.readOnly) {
+                const newItems = [...array]
+                newItems[index].selected = !item.selected
+                console.log(newItems)
+                setItems(newItems)
+              }
             }}
           >
             {item.label}

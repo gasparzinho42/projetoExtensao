@@ -1,5 +1,4 @@
 import React from 'react'
-import BotaoPrincipal from '../../components/botaoPrincipal'
 import Button from '../../components/button'
 import Input from '../../components/Input'
 import ItensSelection from '../../components/itensSelection'
@@ -8,9 +7,9 @@ import Col from '../../components/layout/Col'
 import Row from '../../components/layout/Row'
 import Select from '../../components/select'
 import Paragrafo from '../../components/texto'
-import { selectValues } from '../../utils/mocks'
+import { itemsSelectable, selectValues } from '../../utils/mocks'
+import { Container } from '../search/styles'
 
-import { Container } from '../landingPage/styles'
 import { CustomBox, FormContainer } from './styles'
 
 function Formulario() {
@@ -44,7 +43,7 @@ function Formulario() {
           <Select label='Tipo do establecimento' options={selectValues} />
         </Row>
         <Col>
-          <ItensSelection />
+          <ItensSelection items={itemsSelectable} />
           <Row w='100%' justifyContent='center'>
             <Box w='fit-content' mt='42px'>
               <Button label='Enviar' />
